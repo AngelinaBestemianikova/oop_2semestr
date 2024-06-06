@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="girl.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Unnoficial.Microsoft.Expression.Drawing" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="girl.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
